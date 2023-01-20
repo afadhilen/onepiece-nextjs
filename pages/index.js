@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
+import Link from 'next/Link';
+
 
 export default function Home() {
   return (
@@ -14,7 +16,7 @@ export default function Home() {
           Blog Template on <a href="https://nextjs.org">Next.js!</a>
         </h1>
         <h2>
-          This is the subtitle
+          This is the subtitle, do not click <Link href="/posts/first-post">this</Link>
         </h2>
 
         <p className={styles.description}>
